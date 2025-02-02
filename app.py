@@ -33,7 +33,6 @@ def get_metadata(username, file_name):
             "text_summary": metadata.get("data_summary", "No summary available."),
             "importance":metadata.get("importance", "N/A"),
         }
-        print(response_data)
 
         return jsonify(response_data), 200
 
